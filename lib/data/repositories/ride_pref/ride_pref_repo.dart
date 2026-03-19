@@ -1,5 +1,6 @@
 import 'package:blabla/model/ride_pref/ride_pref.dart';
 
 abstract class RidePrefRepo {
-  Future<List<RidePreference>> getPreferenceHistory();
+  Future<List<RidePreference>> getRidePref();
+  Future<void> addRidePref(RidePreference ridePreference);
 }

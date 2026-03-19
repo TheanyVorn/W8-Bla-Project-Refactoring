@@ -5,7 +5,12 @@ import 'ui/theme/theme.dart';
 
 void mainCommon(List<InheritedProvider> providers) {
   //  List<InheritedProvider> providers;
-  runApp(MultiProvider(providers: providers, child: MaterialApp(debugShowCheckedModeBanner: false, home: BlaBlaApp())));
+  runApp(
+    MultiProvider(
+      providers: providers,
+      child: MaterialApp(debugShowCheckedModeBanner: false, home: BlaBlaApp()),
+    ),
+  );
 }
 
 class BlaBlaApp extends StatelessWidget {
